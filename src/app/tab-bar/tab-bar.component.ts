@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TabService } from '../tab.service';
 
 @Component({
   selector: 'app-tab-bar',
@@ -16,4 +17,7 @@ export class TabBarComponent {
   selectTab(index: number): void {
     this.selectedIndex = index;
   }
+
+  constructor(private tabService: TabService) { }
+
 }

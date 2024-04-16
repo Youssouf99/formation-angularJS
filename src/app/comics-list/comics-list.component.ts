@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Comic, SimpleComic } from '../model';
 import { COMIC, COMICS } from '../data';
+import { TabBarComponent } from '../tab-bar/tab-bar.component';
 
 @Component({
   selector: 'app-comics-list',
@@ -9,7 +10,7 @@ import { COMIC, COMICS } from '../data';
 })
 export class ComicsListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private tabService: TabBarComponent) { }
 
   ngOnInit() {
   }

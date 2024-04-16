@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SimpleComic } from '../model';
-import { COMIC } from '../data';
+import { Comic, SimpleComic } from '../model';
+import { COMIC, COMICS } from '../data';
 
 @Component({
   selector: 'app-comics-list',
@@ -24,6 +24,9 @@ export class ComicsListComponent implements OnInit {
   //   description: 'Walker and Pilgrim investigate the death of a member of FG-3, a federally employed and corporate funded trio. Evidence leads Walker to believe a federal cover-up is taking place, and as the investigation spirals out of control both professionally and personally (Zora is killed during a confrontation with FG-3), Walker leaves the police force after exposing the cover-up on television.',
   // }
 
-  comic: SimpleComic = COMIC;
+  //comic: SimpleComic = COMIC;
+
+  comics: Comic[] = COMICS;
+
 
 }

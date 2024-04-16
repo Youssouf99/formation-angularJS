@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Comic, SimpleComic } from '../model';
 import { COMIC, COMICS } from '../data';
 import { TabBarComponent } from '../tab-bar/tab-bar.component';
+import { TabService } from '../tab.service';
+import { title } from 'process';
 
 @Component({
   selector: 'app-comics-list',
@@ -9,10 +11,19 @@ import { TabBarComponent } from '../tab-bar/tab-bar.component';
   styleUrls: ['./comics-list.component.css']
 })
 export class ComicsListComponent implements OnInit {
+  comics: Comic[] = COMICS;
 
-  constructor(private tabService: TabBarComponent) { }
+  constructor(private tabService: TabService) { }
 
   ngOnInit() {
+    this.tabService.titleChanged$.subscribe(title => {
+      if (title === null || title === "All") {
+        this.comics = COMICS;
+      } else {
+        this.comics = COMICS.filter(comic => comic.title.includes(title));
+      }
+    })
+
   }
 
 
@@ -27,7 +38,6 @@ export class ComicsListComponent implements OnInit {
 
   //comic: SimpleComic = COMIC;
 
-  comics: Comic[] = COMICS;
 
 
 }

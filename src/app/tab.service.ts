@@ -5,7 +5,7 @@ import { Observable, Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class TabService {
-  private titleChangedSource: Subject<string> = new Subject<string>;
+  private titleChangedSource: Subject<string> = new Subject<string>();
   titleChanged$: Observable<string> = this.titleChangedSource.asObservable();
 
   constructor() { }

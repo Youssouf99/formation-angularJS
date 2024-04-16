@@ -5,4 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './tab-bar.component.html',
   styleUrls: ['./tab-bar.component.css']
 })
-export class TabBarComponent { }
+export class TabBarComponent {
+  tabs: string[] = ['All', 'Powers', 'Chewbacca', 'Ultimate Spider-Man'];
+  selectedIndex: number = 0;
+
+  isSelected(index: number): boolean {
+    return index === this.selectedIndex;
+  }
+
+  selectTab(index: number): void {
+    this.selectedIndex = index;
+  }
+}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TabService } from '../tab.service';
+import { TabService } from '../services/tab.service';
 
 @Component({
   selector: 'app-tab-bar',

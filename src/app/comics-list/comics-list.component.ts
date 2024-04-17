@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Comic, SimpleComic } from '../model';
 import { COMIC, COMICS } from '../data';
 import { TabBarComponent } from '../tab-bar/tab-bar.component';
-import { TabService } from '../tab.service';
+import { TabService } from '../services/tab.service';
 import { title } from 'process';
 
 @Component({

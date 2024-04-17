@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-xs-12">
     <ul class="list-unstyled">
-      <li class="media mt-5" *ngFor="let comic of comics">
+      <li class="media mt-5" *ngFor="let comic of comics | sortByTitle">
         <img class="mr-3" alt="Comic cover" [src]="'assets/' + comic.thumbnail.path + '.' + comic.thumbnail.extension">
         <div class="media-body">
           <h2 class="media-heading">

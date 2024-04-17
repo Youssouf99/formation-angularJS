@@ -1,5 +1,9 @@
-<div class="row">
-  <div class="col-xs-12">
+<div class="container">
+
+  <app-tab-bar></app-tab-bar>
+
+  <div class="media">
+
     <ul class="list-unstyled">
       <li class="media mt-5" *ngFor="let comic of comics | sortByTitle">
         <img class="mr-3" alt="Comic cover" [src]="'assets/' + comic.thumbnail.path + '.' + comic.thumbnail.extension">
@@ -14,15 +18,5 @@
         </div>
       </li>
     </ul>
-    <div class="media">
-      <img class="mr-3" alt="Comic cover" [src]="comic.thumbnail">
-      <div class="media-body">
-        <h2 class="media-heading">{{ comic.title }}
-          <span class="badge badge-danger">#{{ comic.issueNumber }}</span>
-          <span class="badge badge-pill badge-secondary">${{ comic.price }}</span>
-        </h2>
-        <p>{{ comic.description }}</p>
-      </div>
-    </div>
   </div>
 </div>

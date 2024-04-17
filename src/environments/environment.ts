@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: 'https://gateway.marvel.com:443',
+  apiKey: 'e49cdafb89d209c2af86912d136e2e3f'
+
 };
 
 /*

@@ -1,22 +1,17 @@
-<div class="container">
+<div class="media">
+  <ul class="list-unstyled">
+    <li class="media mt-5" *ngFor="let comic of comics$ | async " [routerLink]="['/comic', comic.id]">
+      <img class="mr-3" alt="Comic cover" [src]="comic.thumbnail.path + '.' + comic.thumbnail.extension">
+      <div class="media-body">
+        <h2 class="media-heading">
+          {{comic.title}}
+          <span class="badge badge-danger">#{{comic.issueNumber}}</span>
+          <span class="badge badge-pill badge-secondary"
+            *ngIf="comic.prices[0].price > 0">${{comic.prices[0].price}}</span>
+        </h2>
+        <p *ngIf="comic.textObjects && comic.textObjects.length > 0">{{ comic.textObjects[0].text }}</p>
 
-  <app-tab-bar></app-tab-bar>
-
-  <div class="media">
-
-    <ul class="list-unstyled">
-      <li class="media mt-5" *ngFor="let comic of comics | sortByTitle">
-        <img class="mr-3" alt="Comic cover" [src]="'assets/' + comic.thumbnail.path + '.' + comic.thumbnail.extension">
-        <div class="media-body">
-          <h2 class="media-heading">
-            {{comic.title}}
-            <span class="badge badge-danger">#{{comic.issueNumber}}</span>
-            <span class="badge badge-pill badge-secondary"
-              *ngIf="comic.prices[0].price > 0">${{comic.prices[0].price}}</span>
-          </h2>
-          <p>{{comic.description}}</p>
-        </div>
-      </li>
-    </ul>
-  </div>
+      </div>
+    </li>
+  </ul>
 </div>

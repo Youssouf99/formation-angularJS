@@ -37,6 +37,7 @@ export class Comic {
   characters: Items;
   stories: Items;
   events: Items;
+  data: any;
 }
 
 export class Url {

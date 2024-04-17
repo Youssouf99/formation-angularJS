@@ -10,6 +10,7 @@ import { ComicDetailComponent } from './comic-detail/comic-detail.component';
 import { ComicsListComponent } from './comics-list/comics-list.component';
 import { SortByTitlePipe } from './pipes/sort-by-title.pipe';
 import { RoutingModule } from './routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +21,13 @@ import { RoutingModule } from './routing.module';
     NavBarComponent,
     ComicDetailComponent,
     ComicsListComponent,
-    SortByTitlePipe
+    SortByTitlePipe,
+
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

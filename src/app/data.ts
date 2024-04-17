@@ -100,7 +100,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/21464/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 37091,
@@ -182,7 +183,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/37091/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 37092,
@@ -264,7 +266,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/37092/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 37094,
@@ -346,7 +349,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/37094/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 21463,
@@ -438,7 +442,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/21463/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 37090,
@@ -520,7 +525,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/37090/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 37089,
@@ -602,7 +608,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/37089/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 17477,
@@ -709,7 +716,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/17477/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 37093,
@@ -791,7 +799,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/37093/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 20538,
@@ -941,7 +950,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/20538/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 20549,
@@ -1100,7 +1110,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/20549/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 20556,
@@ -1286,7 +1297,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/20556/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 54034,
@@ -1407,7 +1419,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/54034/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 54035,
@@ -1533,7 +1546,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/54035/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 53790,
@@ -1644,7 +1658,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/53790/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 20557,
@@ -1807,7 +1822,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/20557/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 20558,
@@ -1966,7 +1982,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/20558/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 54036,
@@ -2092,7 +2109,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/54036/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 18977,
@@ -2202,7 +2220,8 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/18977/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   },
   {
     'id': 54037,
@@ -2323,5 +2342,6 @@ export const COMICS: Comic[] =
       'collectionURI': 'http://gateway.marvel.com/v1/public/comics/54037/events',
       'items': [],
       'returned': 0
-    }
+    },
+    data: undefined
   }];
